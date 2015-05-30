@@ -1,0 +1,33 @@
+<?php
+
+function bakery_user_login(&$edit, $account) {
+    drupal_set_message("This is just to check if the hook is working!");
+    $_GET['destination'] = 'welcome_new_user';
+
+}
+
+
+
+
+
+// testing to see if the hook and module is even being called it was !!!
+// function bakery_menu()
+// {
+//      $items['bob']   = array(
+//         'title' => 'Ping Pong',
+//         'page callback' => 'ping_pong_success',
+//         'access callback' => TRUE,
+//         'type' => MENU_NORMAL_ITEM,
+//     );
+//     return $items;
+// }
+// function bakery_user_menu() {
+//     $items['welcome'] = array(
+//         'title' => 'Hi There!',
+//         'page callback' => 'welcome_new_user',
+//         'access callback' => TRUE,
+//         'type' => MENU_CALLBACK,
+//     );
+//     return $items;
+// }
+//
